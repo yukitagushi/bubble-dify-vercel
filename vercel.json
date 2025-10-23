@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/index.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/bind", "dest": "/api/index.py" },
+    { "src": "/retrieval", "dest": "/api/index.py" }
+  ]
+}
